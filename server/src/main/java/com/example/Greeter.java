@@ -2,6 +2,8 @@ package com.example;
 
 /**
  * This is a class.
+ 
+ @author Jamal Mustafa
  */
 public class Greeter {
 
@@ -12,8 +14,11 @@ public class Greeter {
 
   }
 
-  //TODO: Add javadoc comment
-  public String greet(String someone) {
+	/**
+	* @param someone the name of a person
+	* @return the String is the greeting text
+	*/
+  public final String greet(final String someone) {
     return String.format("Hello, %s!", someone);
   }
 }
